@@ -1,4 +1,7 @@
-@font-face {
+@import url("icons.css");
+
+@font-face 
+{
     font-family: Museo;
     src: url("Museo.otf");
 }
@@ -63,6 +66,7 @@
 {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
@@ -86,13 +90,14 @@
 }
 .form-relogio .relogio .time span
 {
-    clear: both;
-    float: right;
+    padding: 1rem 0 0;
+}
+.form-relogio .relogio .time span a
+{
     color: #333;
+    font-size: 1.2rem;
     position: relative;
-    padding: 1rem 1rem .0rem;
-    text-transform: capitalize;
-    font-family: sans-serif!important;
+    margin: 1rem 1rem .0rem;
 }
 
 .dia
@@ -110,7 +115,8 @@
     } 
     .form-relogio .relogio .semana
     {
-        padding: .5rem;
+        padding: 0 .3rem 1rem;
+        flex-wrap: wrap;
     }
     .form-relogio .relogio .semana li
     {
